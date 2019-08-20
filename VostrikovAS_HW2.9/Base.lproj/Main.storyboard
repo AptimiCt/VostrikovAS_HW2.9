@@ -27,6 +27,11 @@
                                 <state key="normal" title="Запустить анимацию">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="startAnimationButtonPrecced:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hup-wS-7MG"/>
                                 </connections>
@@ -50,7 +55,7 @@
                                     <constraint firstItem="qDH-2F-6LH" firstAttribute="leading" secondItem="Rt9-UE-eVs" secondAttribute="leading" constant="20" id="saT-QB-iZx"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRudius">
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
