@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="VostrikovAS_HW2_9" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XJJ-PO-rcd" customClass="SpringButton" customModule="Spring">
+                                <rect key="frame" x="50" y="633" width="314" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="jiL-yR-7a4"/>
+                                </constraints>
+                                <state key="normal" title="Запустить анимацию">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="startAnimationButtonPrecced:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hup-wS-7MG"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rt9-UE-eVs" customClass="SpringView" customModule="Spring">
+                                <rect key="frame" x="87" y="94" width="240" height="145"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qDH-2F-6LH" customClass="SpringLabel" customModule="Spring">
+                                        <rect key="frame" x="20" y="20" width="200" height="105"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.14748127771575753" green="0.29807472229003906" blue="0.17431283369790732" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.46308854755083839" green="0.74011428523911305" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="qDH-2F-6LH" secondAttribute="bottom" constant="20" id="3Qt-vr-ZXA"/>
+                                    <constraint firstAttribute="trailing" secondItem="qDH-2F-6LH" secondAttribute="trailing" constant="20" id="41r-SE-mi0"/>
+                                    <constraint firstAttribute="height" constant="145" id="Evi-qS-BGv"/>
+                                    <constraint firstItem="qDH-2F-6LH" firstAttribute="top" secondItem="Rt9-UE-eVs" secondAttribute="top" constant="20" id="YKK-GA-hrg"/>
+                                    <constraint firstItem="qDH-2F-6LH" firstAttribute="leading" secondItem="Rt9-UE-eVs" secondAttribute="leading" constant="20" id="saT-QB-iZx"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRudius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.8770492414147989" green="0.98377615213394165" blue="0.96922797856543796" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="XJJ-PO-rcd" firstAttribute="leading" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="8Bs-EL-w8v"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Rt9-UE-eVs" secondAttribute="trailing" constant="87" id="9EL-yd-vj1"/>
+                            <constraint firstItem="Rt9-UE-eVs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="ATI-jz-wVe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="XJJ-PO-rcd" secondAttribute="trailing" constant="50" id="NmX-fH-jXc"/>
+                            <constraint firstItem="Rt9-UE-eVs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="R1A-18-4gJ"/>
+                            <constraint firstItem="XJJ-PO-rcd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="U2q-m9-IoG"/>
+                            <constraint firstItem="Rt9-UE-eVs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="USN-yL-y5k"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XJJ-PO-rcd" secondAttribute="bottom" multiplier="1.3" id="ia0-Dr-GsS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="animationLabel" destination="qDH-2F-6LH" id="Cb2-Kj-Znh"/>
+                        <outlet property="animationView" destination="Rt9-UE-eVs" id="3wW-gG-VCt"/>
+                        <outlet property="startAndNextAnimationOutlet" destination="XJJ-PO-rcd" id="DLs-zk-Dw0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47.826086956521742" y="20.758928571428569"/>
+        </scene>
+    </scenes>
+</document>
